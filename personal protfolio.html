@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vignesh A | Web Developer Portfolio</title>
+    <style>
+        /* CSS Styles */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        header, footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        #home {
+            background: #4CAF50;
+            color: #fff;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .intro h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .intro p {
+            font-size: 1.2em;
+        }
+
+        .intro .btn {
+            padding: 10px 20px;
+            background: #333;
+            color: #fff;
+            text-decoration: none;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        .about-content {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .about-content img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        .skills-grid, .projects-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .skill, .project {
+            flex: 1;
+            min-width: 200px;
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .project a {
+            display: inline-block;
+            color: #4CAF50;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+
+        .btn {
+            background: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="intro">
+            <h1>Hi, I'm Vignesh A</h1>
+            <p>Web Developer | Programmer | Innovator</p>
+            <a href="#about" class="btn">Learn More About Me</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="profile.jpg" alt="Vignesh A's Photo">
+                <div>
+                    <p>Hello! I'm Vignesh A, a passionate web developer with a strong foundation in HTML, CSS, JavaScript, and front-end frameworks. I'm currently pursuing a Bachelor of Computer Applications at Presidency University Bangalore and have completed internships at IBM and Amazon, along with small-scale companies. With 25 certification courses from Forage and hands-on experience, I am continuously improving my skills in Python, MySQL, and DevOps.</p>
+                    <p>Education: Bachelor of Computer Applications from Presidency University Bangalore (2024-2026).</p>
+                    <p>Languages: English, Hindi, Malayalam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">HTML & CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">Python</div>
+                <div class="skill">MySQL</div>
+                <div class="skill">DevOps</div>
+                <div class="skill">Machine Learning</div>
+                <div class="skill">Java</div>
+                <div class="skill">AutoCAD</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <h3>E-commerce Website</h3>
+                    <p>A dynamic website built using HTML, CSS, and JavaScript with interactive shopping features.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Data Analysis Tool</h3>
+                    <p>Developed using Python and Pandas, this tool analyzes business data to generate insights.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Portfolio Website</h3>
+                    <p>A responsive, personal portfolio website designed to showcase my work and skills.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out via email or connect on social media. I look forward to connecting!</p>
+            <form action="https://formspree.io/f/your-email" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Vignesh A. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Smooth Scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
